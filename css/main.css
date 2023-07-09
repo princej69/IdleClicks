@@ -10,6 +10,7 @@
 * {
     -webkit-tap-highlight-color: transparent;
     font-family: "Condensed";
+    outline: none;
 }
 
 b {
@@ -20,60 +21,21 @@ b {
 body {
     margin: 10px;
     background: #f2f2f2;
-}
-
-header {
-    background: #dddddd;
-    padding: 6px;
-    border-radius: 9px;
-    margin-bottom: 5px;
-}
-
-.title.header {
-    font-family: "Condensed Medium";
-}
-
-.right.header {
-    float: right;
-}
-
-.button.headermenu {
-    color: black;
-}
-
-.button.header {
-    color: black;
-    margin-left: 5px;
-}
-
-#drawer {
-    background: #eeeeee;
-    padding: 6px;
-    border-radius: 9px;
-    margin-bottom: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-}
-a.button.bodyredi {
-    color: black;
-
-}
-.notice.body {
-    border: 2px solid grey;
-    border-radius: 9px;
-    padding: 3px;
-    margin-bottom: 3px;
-    width: fit-content;
-}
-
-footer, #ftr {
-    font-size: 12px;
     text-align: center;
+}
+
+#clicks {
+    font-family: "Condensed medium";
+    font-size: 35px;
+}
+#clickbutton {
+    width: 75px;
+    font-family: "condensed medium";
+    border-radius: 8px;
+    border: solid;
+    padding: 5px;
+    background: #eee;
+}
+#clickbutton:active {
     background: #ddd;
-    color: #000;
-    margin-top: 25px;
-    border-radius: 15px;
 }
