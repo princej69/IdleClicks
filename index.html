@@ -9,6 +9,19 @@
     <body>
         You have <span id="clicks">0</span> Clicks <br>
         <button id="clickbutton" onclick="clic()">Click</button><br><br>
+        <div id=generators>
+            <div id="gen1">
+                Clicker #1
+                <span id="g1c">0</span>
+                <button id="buygbtn" onclick="buyClicker(1)">10 Clicks</button>
+            </div>
+            <div id="gen1">
+                Clicker #2
+                <span id="g2c">0</span>
+                <button id="buygbtn" onclick="buyClicker(2,1000)">1000 Clicks</button>
+            </div>
+        </div>
+        <br>
         Please note: Saving isn’t implemented so all your progress will be lost.
     </body>
     <script src="js/main.js"></script>
