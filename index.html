@@ -8,21 +8,28 @@
     </head>
     <body>
         You have <span id="clicks">0</span> Clicks <br>
-        <button id="clickbutton" onclick="clic()">Click</button><br><br>
+        <button class="tabbutton" id="clickbutton" onclick="clic()">Click</button>
+        <button class="tabbutton">Options</button>
+        <br><br>
         <div id=generators>
-            <div id="gen1">
+            <div id="gen1" class="gen">
                 Clicker #1
-                <span id="g1c">0</span>
+                <span id="g1c" class="gencount">0</span>
                 <button id="buygbtn" onclick="buyClicker(1)">10 Clicks</button>
             </div>
-            <div id="gen1">
+            <div id="gen2" class="gen">
                 Clicker #2
-                <span id="g2c">0</span>
+                <span id="g2c" class="gencount">0</span>
                 <button id="buygbtn" onclick="buyClicker(2,1000)">1000 Clicks</button>
+            </div>
+            <div id="gen3" class="gen">
+                Clicker #3
+                <span id="g3c" class="gencount">0</span>
+                <button id="buygbtn" onclick="buyClicker(3,1000000)">1m Clicks</button>
             </div>
         </div>
         <br>
-        Please note: Saving isn’t implemented so all your progress will be lost.
+        Saving is here! Remember to save your progress here: <button class="tabbutton" onclick="save()">Save</button>
     </body>
     <script src="js/main.js"></script>
     <script src="js/update.js"></script>

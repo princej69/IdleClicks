@@ -23,12 +23,14 @@ body {
     background: #f2f2f2;
     text-align: center;
 }
-
+.gencount {
+    font-family: "condensed medium";
+}
 #clicks {
     font-family: "Condensed medium";
     font-size: 35px;
 }
-#clickbutton {
+.tabbutton {
     width: 75px;
     font-family: "condensed medium";
     border-radius: 8px;
@@ -36,6 +38,21 @@ body {
     padding: 5px;
     background: #eee;
 }
-#clickbutton:active {
+.tabbutton:active {
     background: #ddd;
+}
+#buygbtn {
+    width: 100px;
+    font-family: "condensed medium";
+    border-radius: 8px;
+    border: solid;
+    padding: 5px;
+    background: #eee;
+    
+}
+#buygbtn:active {
+    background: #ddd;
+}
+.gen {
+    margin-bottom: 5px;
 }
