@@ -31,7 +31,7 @@ body {
     font-size: 35px;
 }
 .tabbutton {
-    width: 75px;
+    min-width: 75px;
     font-family: "condensed medium";
     border-radius: 8px;
     border: solid;
@@ -55,4 +55,18 @@ body {
 }
 .gen {
     margin-bottom: 5px;
+}
+.dialogtitle {
+    font-size: 20px;
+    font-family: "condensed medium";
+}
+#optionsdialog {
+    width: auto;
+    max-height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: scroll;
+}
+#optionsdialog > div {
+    min-height: 100px;
 }

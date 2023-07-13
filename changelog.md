@@ -1,4 +1,10 @@
 # Changelog
+## 0.1.1
+- Added Options
+- Automated the saving
+- Moved save button to options
+- Added reset game button
+- Fixed the not progressing because it is SO ANNOYING
 ## 0.1
 - _ADDED SAVING!_ Remember to click on the Save button or it won’t be saved!
 - Increased FPS to 20

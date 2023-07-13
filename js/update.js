@@ -10,3 +10,7 @@ setInterval(()=>{
     game.clickers[1] += game.clickers[2]/20
     game.clickers[2] += game.clickers[3]/20
 },1000/20)
+
+setInterval(()=>{
+    save()
+},10000)

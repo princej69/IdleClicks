@@ -1,3 +1,4 @@
+const dialogue = document.querySelector("#optionsdialog")
 let game = {
     clicks: 0,
     clickers: {
@@ -14,7 +15,21 @@ function load() {
     try {
         game = JSON.parse(localStorage.getItem("IdleClicksSave"))
     } catch {
+        save()
         console.log("Error Occured")
+    }
+}
+function hardReset() {
+    if (confirm("Are you sure you want to do this?")) {
+        game = {
+            clicks: 0,
+            clickers: {
+              1: 0,
+              2: 0,
+              3: 0,
+            }
+        }
+        save()
     }
 }
 

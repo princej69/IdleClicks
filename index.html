@@ -9,7 +9,7 @@
     <body>
         You have <span id="clicks">0</span> Clicks <br>
         <button class="tabbutton" id="clickbutton" onclick="clic()">Click</button>
-        <button class="tabbutton">Options</button>
+        <button class="tabbutton" onclick="dialogue.showModal()">Options</button>
         <br><br>
         <div id=generators>
             <div id="gen1" class="gen">
@@ -29,7 +29,14 @@
             </div>
         </div>
         <br>
-        Saving is here! Remember to save your progress here: <button class="tabbutton" onclick="save()">Save</button>
+        <dialog id="optionsdialog">
+            <span class="dialogtitle">Options</span>
+            <div>
+                <button class="tabbutton" onclick="save()">Save</button> <button class="tabbutton" onclick="hardReset()">HARD RESET</button><br>
+                <a href="https://idleclickshelp.blogspot.com/?m=1">Blogger</a>
+            </div>
+            <button class="tabbutton" onclick="dialogue.close()">Close</button>
+        </dialog>
     </body>
     <script src="js/main.js"></script>
     <script src="js/update.js"></script>
