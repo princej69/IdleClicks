@@ -12,6 +12,7 @@ function save() {
     localStorage.setItem("IdleClicksSave", JSON.stringify(game))
 }
 function load() {
+    if(localStorage.getItem("IdleClicksSave") == null) save()
     try {
         game = JSON.parse(localStorage.getItem("IdleClicksSave"))
     } catch {
